@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+	<div class="page__container _container">
+		<div class="page__input input-page">
+			<div class="input-page__title title">
+				Введите запросы
+			</div>
+			<div class="input-page__undertitle">Каждый запрос в новой строке</div>
+			<textarea class="input-page__input" placeholder="https://api.github.com/users/arsb29"></textarea>
+			<div class="input-page__row">
+				<div class="input-page__column">
+					<div class="input-page__limitText">Ограничение на число запросов</div>
+					<div class="input-page__buttons">
+						<button onclick="removeValue()" class="input-page__button input-page__element"><img
+								src="img/minus.svg" alt="" /></button>
+						<div class="input-page__element input-page__limit">1</div>
+						<button onclick="addValue()" class="input-page__button input-page__element"><img src="img/plus.svg"
+								alt="" /></button>
+					</div>
+				</div>
+				<button onclick="makeRequests()" class="input-page__search">Поиск</button>
+			</div>
+
+		</div>
+
+
+		<div class="page__answer answer-page">
+			<div class="answer-page__container">
+				<div class="answer-page__title title">Запросы</div>
+				<div class="answer-page__requests">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="page__final final-page">
+			<div class="final-page__container">
+				<div class="final-page__title title">
+					Результаты
+				</div>
+				<div class="final-page__answers">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

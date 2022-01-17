@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  font-family: Montserrat;
+  color: #333333;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+._container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 10px;
+}
+
+.input-page__title {
+  margin: 0 0 0px;
+}
+
+.input-page__undertitle {
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.input-page__input {
+  width: 95%;
+  height: 300px;
+  padding: 20px;
+  font-size: 18px;
+  outline: none;
+  background-color: #f5f5f6;
+  border: 1px solid #f5f5f6;
+  margin: 0 0 20px;
+  word-break: break-word;
+}
+
+.input-page__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-page__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-page__limitText {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.input-page__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-page__element {
+  width: 70px;
+  height: 70px;
+  background-color: #f5f5f6;
+  border: 1px solid #f5f5f6;
+  margin: 0 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.input-page__button {
+  cursor: pointer;
+}
+
+.input-page__button:hover {
+  background-color: #cccccc;
+}
+
+.input-page__limit {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.input-page__search {
+  cursor: pointer;
+  width: 170px;
+  height: 70px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 19px;
+  background: #ffdd2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.input-page__search:hover {
+  background-color: #f5ce0d;
+}
+
+.answer-page {
+  display: none;
+}
+
+.answer-page__title {
+  margin: 0 0 30px;
+}
+
+.answer-page__request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.answer-page__text {
+  height: 60px;
+  background: #f5f5f6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  margin: 0 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.answer-page__state {
+  width: 60px;
+  height: 60px;
+  background: #f5f5f6;
+  position: relative;
+  border-radius: 50%;
+}
+
+.answer-page__state::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: url("../img/waiting.svg") 50% no-repeat;
+}
+
+.answer-page__state.inProgress::after {
+  background: url("../img/inProgress.svg") 50% no-repeat;
+}
+
+.answer-page__state.resolved {
+  background-color: #78e25d;
+}
+
+.answer-page__state.resolved::after {
+  background: url("../img/resolve.svg") 50% no-repeat;
+}
+
+.answer-page__state.duplicate {
+  background-color: #ffdd2d;
+}
+
+.answer-page__state.duplicate::after {
+  background: url("../img/duplicate.svg") 50% no-repeat;
+}
+
+.answer-page__state.rejected {
+  background-color: #ff7070;
+}
+
+.answer-page__state.rejected::after {
+  background: url("../img/rejected.svg") 50% no-repeat;
+}
+
+.final-page {
+  display: none;
+}
+
+.final-page__title {
+  margin: 0 0 30px;
+}
+
+.final-page__answer {
+  margin: 0 0 30px;
+  background: #f5f5f6;
+  padding: 20px;
+}
+
+.final-page__secondTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.final-page__text {
+  margin: 0 0 10px;
+}
